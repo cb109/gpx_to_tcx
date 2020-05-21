@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <gpx version="1.1" creator="https://www.komoot.de" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Test 123</name>
+    <name>This name is too long</name>
     <author>
       <link href="https://www.komoot.de">
         <text>komoot</text>
@@ -10,7 +10,7 @@
     </author>
   </metadata>
   <trk>
-    <name>Test 123</name>
+    <name>This name is too long</name>
     <trkseg>
       <trkpt lat="52.001547" lon="8.494487">
         <ele>158.005848</ele>
