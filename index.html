@@ -124,9 +124,18 @@
 
         return formatted;
     };
+      function removeExtraEmptyNamespaceAttributes(xmlText) {
+        // Since we created the <Track> element on the root level it
+        // will automatically get a new namespace attribute of
+        // 'xmlns=""'. This confuses the Garmin TC XML parser, so we
+        // need to remove it.
+        xmlText = xmlText.replace('<Track xmlns="">', '<Track>');
+        return xmlText;
+      }
 
       function downloadXmlDocAsFile(filename, xmlDoc) {
         var xmlText = formatXml(new XMLSerializer().serializeToString(xmlDoc.documentElement));
+        xmlText = removeExtraEmptyNamespaceAttributes(xmlText);
 
         var element = document.createElement('a');
         element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(xmlText));
