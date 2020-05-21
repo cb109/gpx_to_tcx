@@ -5,11 +5,32 @@
     <title>GPX to TCX</title>
   </head>
   <body>
-    <input
-      id="file"
-      type="file"
-      accept=".gpx"
+    <div
+      style="
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+      "
     >
+      <h2
+        style="
+          text-align: center;
+          color: blueviolet;
+          opacity: 0.5;
+          margin-bottom: 36px;
+        "
+      >
+        Garmin Connect .gpx to Garmin TC .tcx
+      </h2>
+      <input
+        id="file"
+        type="file"
+        accept=".gpx"
+      >
+    </div>
     <script>
 
       var TCX_TEMPLATE = `
